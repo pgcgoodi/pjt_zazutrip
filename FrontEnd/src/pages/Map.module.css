@@ -1,0 +1,215 @@
+.mapContainer {
+    height: 580px;
+  }
+  
+  .mapButtons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .textCenter {
+    text-align: center;
+  }
+  
+  .clickedPositionInfo {
+    margin-top: 10px;
+  }
+  
+  .button {
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    outline: none;
+    transition: border-color 0.3s;
+    border-radius: 5px; /* 둥근 테두리 추가 */
+    margin-right: 2px; /* 버튼 사이 간격 추가 */
+}
+
+.buttonSelected {
+    border: 2px solid blue;
+    border-radius: 5px; /* 둥근 테두리 추가 */
+}
+
+.returnButtonContainer {
+  position: absolute;
+  bottom: 40px;
+  right: 10px;
+  z-index: 999; 
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* 여기서 z-index 값을 설정합니다. */
+}
+
+.modalContent {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.returnButton {
+  background-color: #007BFF; /* 파란색 배경 */
+  color: white;              /* 텍스트 색상은 흰색 */
+  padding: 10px 20px;       /* 패딩 값 */
+  border: none;             /* 테두리 제거 */
+  border-radius: 5px;       /* 둥근 테두리 */
+  cursor: pointer;          /* 마우스 오버 시 손가락 모양으로 변경 */
+  transition: background-color 0.3s; /* 배경색 변경 트랜지션 */
+}
+
+
+.callVehicleButton {
+  background-color: #4CAF50;  /* Green background */
+  border: none;               /* No border */
+  color: white;               /* White text */
+  padding: 10px 20px;        /* Some padding */
+  text-align: center;        /* Centered text */
+  text-decoration: none;     /* No underline */
+  display: inline-block;     /* Inline-block */
+  font-size: 16px;           /* Big font size */
+  margin: 4px 2px;           /* Some margin */
+  cursor: pointer;           /* Pointer/hand icon */
+  border-radius: 4px;        /* Rounded corners */
+  transition-duration: 0.4s; /* Transition effect */
+}
+
+.destinationButton {
+  padding: 10px 20px;
+  background-color: #3498db; /* 파란색 배경 */
+  color: #ffffff; /* 흰색 글자 */
+  border: 1px solid #2980b9; /* 조금 더 진한 파란색 보더 */
+  border-radius: 5px; /* 버튼 모서리 둥글게 */
+  cursor: pointer; /* 마우스 커서를 손가락 모양으로 변경 */
+  transition: background-color 0.3s; /* 배경색 변경 애니메이션 */
+}
+
+.centerContent {
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* 필요하다면 100%로 설정 */
+  height: 100%; /* 필요하다면 높이를 지정해 줄 수 있습니다 */
+}
+
+
+/* Map.module.css에 추가 */
+
+.confirmButton, .cancelButton {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.confirmButton {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.confirmButton:hover {
+  background-color: #45a049;
+}
+
+.cancelButton {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+.cancelButton:hover {
+  background-color: #d32f2f;
+}
+
+/* 출발하기 버튼에 대한 스타일 */
+.startButton {
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* 정지하기 버튼에 대한 스타일 */
+.stopButton {
+  padding: 10px 20px; /* 버튼의 크기 조절을 위한 패딩 */
+  background-color: red; /* 예: 버튼의 배경색 */
+  color: white; /* 예: 버튼의 텍스트 색 */
+  border: none; /* 버튼 테두리 제거 */
+  cursor: pointer; /* 마우스를 올렸을 때 손가락 커서 표시 */
+  border-radius: 5px; 
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 999;
+}
+
+.dropdownMenu {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  width: 100%;
+}
+
+.dropdownMenu button {
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.dropdownMenu button:hover {
+  background-color: #f1f1f1;
+}
+
+
+.destinationButton {
+  background-color: #b621fe;
+  color: #ffffff; /* 흰색 글씨 */
+  border: none; /* 테두리 없애기 */
+  padding: 10px 20px; /* 패딩 */
+  border-radius: 5px; /* 모서리 둥글게 */
+  cursor: pointer; /* 마우스 커서를 손 모양으로 */
+  font-weight: bold; /* 글씨 굵게 */
+}
+
+/* styles.module.css */
+.purpleText {
+  color: purple;
+  transition: color 1s ease-in-out;
+  font-weight: bold; /* 글씨체를 굵게 설정 */
+}

@@ -1,0 +1,109 @@
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e0b0ff; /* 자주빛에서 보라빛으로 변경 */
+
+}
+
+.loginForm {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(128, 0, 128, 0.1); /* 보라색 계열의 그림자 */
+  max-width: 300px;
+  width: 100%;
+
+}
+
+.loginForm h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+  color: #800080; /* 제목을 보라색으로 변경 */
+}
+
+.inputField {
+  margin-bottom: 15px;
+}
+
+.inputField label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #800080; /* 라벨을 보라색으로 변경 */
+}
+
+.inputField input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #800080; /* 입력 필드 테두리를 보라색으로 변경 */
+  border-radius: 5px;
+}
+
+.loginForm button {
+  width: 100%;
+  padding: 10px;
+  background-color: #800080; /* 버튼 배경색을 보라색으로 변경 */
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  margin: 10px auto; /* Top and bottom margin of 10px, and auto for left and right to center the button */
+  display: block; /* Make the button a block element so it respects the margin settings */
+}
+
+
+
+/* Login.module.css */
+
+.inputField input {
+  width: 80%; /* Adjust this value to your liking */
+  padding: 10px; /* Add some padding for better appearance */
+  border-radius: 5px; /* Round the corners for a softer look */
+  border: 1px solid rgb(227, 110, 234); /* A subtle border */
+}
+/* Modal.module.css */
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  max-width: 500px;
+  text-align: center
+}
+
+.modalContent p {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.button {
+  background-color: #f73c09;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  
+}
+

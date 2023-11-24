@@ -1,0 +1,100 @@
+.checkReservationContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* 중앙 정렬을 위한 스타일 */
+    padding: 30px;  /* 패딩 추가 */
+    font-family: Arial, sans-serif;  /* 기본 폰트 변경 */
+    background-color: #f6f6f6;  /* 배경색 변경 */
+    border-radius: 10px;  /* 모서리 둥글게 */
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;  /* 여백 추가 */
+    text-align: center;  /* 텍스트 중앙 정렬 */
+}
+
+.reservationDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  /* 그림자 효과 */
+    margin-bottom: 20px;
+}
+
+.reservationDetail p {
+    margin-bottom: 10px;
+    text-align: center;  /* 텍스트 중앙 정렬 */
+}
+
+.confirmButton {
+    padding: 10px 20px;
+    background-color: #007BFF;  /* 버튼 배경색 */
+    color: #fff;  /* 버튼 글자색 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;  /* 트랜지션 효과 */
+}
+
+.confirmButton:hover {
+    background-color: #0056b3;  /* 호버 효과 */
+}
+
+
+/* 모달 오버레이 스타일 */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* 투명한 검은색 배경 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  /* 모달 창 스타일 */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modalContent {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    border: 2px solid #9c27b0; /* 보라색 테두리 */
+    box-shadow: 0 5px 15px rgba(156, 39, 176, 0.4); /* 보라색 빛나는 그림자 효과 */
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #FF4136; /* 빨간색 'X' 아이콘 */
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  

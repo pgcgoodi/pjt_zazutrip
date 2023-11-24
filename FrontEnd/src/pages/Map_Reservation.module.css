@@ -1,0 +1,47 @@
+.mapContainer {
+    height: 450px;
+  }
+  
+  .mapButtons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .textCenter {
+    text-align: center;
+  }
+  
+  .clickedPositionInfo {
+    margin-top: 10px;
+  }
+  
+  .leaflet-circle-icon {
+    border-radius: 50%; /* 이미지를 원형으로 만들기 위한 속성 */
+    overflow: hidden; /* 이미지가 원형 경계를 넘어가는 부분을 잘라내기 위한 속성 */
+  }
+  
+  .callButton {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+
+}
+

@@ -1,0 +1,62 @@
+.carList {
+  background-color: #df96cf; /* 자주색 배경 */
+  padding: 20px;
+  border-radius: 10px; /* 모서리를 둥글게 */
+  color: white; /* 텍스트를 흰색으로 */
+}
+
+.carItem {
+  flex-direction: column; /* 추가 */
+  background-color: #3950c4; /* 보다 연한 자주색 */
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  display: flex; /* 플렉스박스로 설정 */
+  align-items: center; /* 세로 중앙 정렬 */
+  gap: 10px; /* 아이템들 사이의 간격 */
+}
+
+.navigateButton {
+  margin-bottom: 70px;
+}
+
+.button, .navigateButton {
+  background-color: white; /* 버튼의 배경을 흰색으로 */
+  color: #800020; /* 자주색 텍스트 */
+  border: 2px solid white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0.3s; /* 부드러운 호버 효과 */
+}
+
+.button:hover, .navigateButton:hover {
+  background-color: #800020;
+  color: white;
+
+}
+
+.carImage {
+  width: 100%;
+  max-width: 200px;
+}
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);  /* 반투명한 검은색 배경 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  text-align: center;
+}
+
